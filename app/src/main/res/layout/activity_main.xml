@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tel.rostel.CheckInOut_Hua.MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.49" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.49" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="146dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="217dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="chIn"
+        android:text="CheckIn"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="345dp"
+        android:layout_height="604dp"
+        android:layout_marginTop="4dp"
+        android:text="Результат"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="66dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="clearWindow"
+        android:text="Clear"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="147dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="156dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="UserName"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="149dp"
+        android:layout_height="48dp"
+        android:onClick="saveData"
+        android:text="Сохранить"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/showButton"
+        android:layout_width="84dp"
+        android:layout_height="48dp"
+        android:onClick="showData"
+        android:text="загрузить данные"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline5" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:onClick="showPwd"
+        android:text="Показать пароль"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
