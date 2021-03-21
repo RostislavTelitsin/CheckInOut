@@ -1,7 +1,7 @@
 # CheckInOut
 This is android/java tool to implement CheckIn and CheckOut on site of my employer (when you start and finish your working day). At the very begining it was desktop application but now it's android app
 ___
-**Json** format is used to save username and password in file:
+**JSON** format is used to save username and password in file:
 ~~~
   File txtFile = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "checkInOutData.txt");
   FileInputStream fis = new FileInputStream(txtFile);
