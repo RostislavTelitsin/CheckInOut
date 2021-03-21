@@ -20,7 +20,7 @@ ___
   pwd.setText(upload_data.pass);
 ~~~
 
-**Apache** httpclien lib is used for checkin serrver access:
+**Apache Httpclien** lib is used for checkin serrver access:
 ~~~
  HttpPost httpPost_checkin = new HttpPost(url_checkin);
  List<NameValuePair> checkinparams = new ArrayList<NameValuePair>();
